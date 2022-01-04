@@ -1,0 +1,99 @@
+body,
+body::before,
+body::after
+{
+padding: 0;
+margin: 0;
+box-sizing: inherit;
+}
+html
+{
+font-family: 'roboto', sans-serif;
+font-size: 10px;
+box-sizing: border-box;
+}
+section
+{
+height: 100vh;
+width: 100%;
+background-color: #3c4053;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container
+{
+width: 100%;
+max-width: 80rem;
+margin: 0 auto;
+padding: 0 1.5rem;
+}
+.accordion-item
+{
+background-color: #283042;
+border-radius: .4rem;
+padding: 1rem;
+box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
+}
+.accordion-link
+{
+font-size: 1.6rem;
+color: rgba(255,255,255,.8);
+text-decoration: none;
+background-color: #28304;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 0;
+}
+.accordion-link i
+{
+color: #e7d5ff;
+padding: .5rem;
+}
+.accordion-link .ion-md-remove
+{
+display: none;
+}
+.answer
+{
+max-height: 0;
+overflow: hidden;
+position: relative;
+background-color: #212838;
+}
+.answer::before
+{
+content:"";
+position: absolute;
+width: .6rem;
+height: 90%;
+background-color: #8fc460;
+top: 50%;
+left: 0;
+tranform: translateY(-50%);
+}
+.answer p
+{
+font-size: 1.4rem;
+color: rgba(255,255,255,.6);
+padding: 2rem;
+}
+.accordion-item:target .answer
+{
+max-height: 20rem;
+}
+.accordion-item:target .accordion-link .ion-md-add
+{
+display: run;
+}
+.accordion-item:target .accordion-link .ion-md-remove
+{
+display: block;
+}
+h1
+{ 
+font-size: 20;
+color: white;
+}

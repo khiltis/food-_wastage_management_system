@@ -1,0 +1,96 @@
+<html>
+<head>
+<title> form
+</title>
+<style>
+.donate-form
+{
+width: 85%;
+max-width: 600px;
+bacground: #f1f1f1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 30px 40px;
+box-sizing: border-box;
+border-radius: 8px;
+text-align: center;
+box-shadow: 0 0 20px #000000b3; 
+font-family: "montserrat", sans-serif;
+}
+.donate-form h1
+{
+margin-top: 0;
+font-weight: 200;
+}
+.textb
+{
+border: 1px solid gray;
+margin: 8px 0;
+padding: 12px 18px;
+border-radius: 8px;
+}
+.textb label
+{
+display: block;
+text-align: left;
+color: #333;
+text-transform: uppercase;
+font-size: 14px;
+}
+.textb input, .textb textarea
+{
+width: 100%;
+border: none;
+background: none;
+outline: none;
+font-size: 18px;
+margin-top: 6px;
+}
+.btn
+{
+display: block;
+background: #9b59b6;
+padding: 14px 0;
+color: white;
+text-transform: uppercase;
+cursor: pointer;
+margin-top: 8px;
+width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="donate-form">
+<h1> Food Dontaion Form <hr> </h1>
+
+<div class="textb">
+<label> Type of Food: </label>
+<input type="text"  placeholder="type of food"> </br>
+</div>
+
+<div class="textb">
+<label> Date of cooking : </label>
+<input type="date"  value="dbate"> </br>
+</div>
+
+<div class="textb">
+<label> Time of cooking : </label>
+<input type="time" vaule="dtime"> </br>
+</div>
+
+<div class="textb">
+<label> Quantity: </label>
+<input type="number"  value="num"> 
+<div class="textb">
+<select id="quantity">
+<option value="less than 1 kg">less than 1 kg</option>
+<option value="more than 2 kg">more than 2 kg</option>
+<option value="more than 3 kg">more than 3 kg </option>
+<option value="more than 5 kg">more than 5 kg</option> </br></br>
+</select>
+</div>
+<a class="btn"> send </a>
+</div>
+</form>
